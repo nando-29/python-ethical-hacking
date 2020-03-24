@@ -14,5 +14,6 @@ How to install netfilterqueue:
     pip install NetfilterQueue
 
 
-   iptables -I FORWARD -j NFQUEUE --queue-num 0
+   iptables -I FORWARD -j NFQUEUE --queue-num 0 
+   iptables --flush
     
