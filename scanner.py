@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+#How to run:
+	#0. run		python scanner.py -t 10.0.2.1/24
+             
+
+
 import scapy.all as scapy
 import argparse
 
