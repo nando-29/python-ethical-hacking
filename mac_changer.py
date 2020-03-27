@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+#How to run:
+	#0. run		python mac_changer.py -i eth0 -m 00:11:22:33:44:55
+
 import subprocess
 import optparse
 import re
