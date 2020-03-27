@@ -1,5 +1,13 @@
 #!/usr/bin/env python
 
+#How to run:
+	#0. run		echo 1 > /proc/sys/net/ipv4/ip_forward
+	#1. service apache2 start
+	#2. iptables -I FORWARD -j NFQUEUE --queue-num 0
+	#3. run 	python spoofer.py
+	#4. run 	python sniffer.py
+
+
 import scapy.all as scapy
 from scapy.layers import http
 
