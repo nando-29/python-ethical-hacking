@@ -16,4 +16,7 @@ How to install netfilterqueue:
 
    iptables -I FORWARD -j NFQUEUE --queue-num 0 
    iptables --flush
+
+
+service apache2 start
     
