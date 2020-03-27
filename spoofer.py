@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+#How to run:
+	#0. run		python spoofer.py
+
 import scapy.all as scapy
 import time
 import sys
