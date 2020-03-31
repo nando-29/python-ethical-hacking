@@ -5,7 +5,7 @@
 	#1. service apache2 start
 	#2. iptables -I FORWARD -j NFQUEUE --queue-num 0
 	#3. run 	python spoofer.py
-	#4. run 	python replace_downloads.py
+	#4. run 	python code_injector.py
 
 
 
